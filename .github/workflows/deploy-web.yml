@@ -43,6 +43,8 @@ jobs:
         env:
           EXPO_PUBLIC_SUPABASE_URL: ${{ secrets.EXPO_PUBLIC_SUPABASE_URL }}
           EXPO_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.EXPO_PUBLIC_SUPABASE_ANON_KEY }}
+          EXPO_PUBLIC_WEB_PUSH_VAPID_PUBLIC_KEY: ${{ secrets.EXPO_PUBLIC_WEB_PUSH_VAPID_PUBLIC_KEY }}
+          
 
       - uses: actions/upload-pages-artifact@v3
         with:
